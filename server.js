@@ -13,7 +13,7 @@ const configuration = new Configuration({
 });
 const openai = new OpenAIApi(configuration);
 
-const systemPrompt = \`You are a helpful assistant that explains the AI Automation Mastery course. The course teaches people how to master AI automations to integrate them inside businesses. Explain modules, who it’s for, what results they can expect, and answer objections like "I'm not technical" or "I don’t have time." Be warm, helpful, and expert.\`;
+const systemPrompt = `You are a helpful assistant that explains the AI Automation Mastery course. The course teaches people how to master AI automations to integrate them inside businesses. Explain modules, who it’s for, what results they can expect, and answer objections like "I'm not technical" or "I don’t have time." Be warm, helpful, and expert.`;
 
 app.post("/chat", async (req, res) => {
   const userMessage = req.body.message;
